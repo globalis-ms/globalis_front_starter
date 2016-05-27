@@ -1,0 +1,31 @@
+{
+    "name": "globalis_front_starter",
+    "version": "0.0.1",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "ssh://git@192.168.1.44/usr/local/apache/htdocs/git/front_starter.git"
+    },
+    "devDependencies": {
+        "babel-preset-es2015": "6.*",
+        "uglify-js": "2.*"
+    },
+    "babel": {
+        "presets": ["es2015"]
+    },
+    "scripts": {
+        "init:npm": "npm install",
+        "init:bower": "bower install",
+        "init:scss": "node-sass sources/scss/main.scss public/css/main.css --source-map public/css/main.css.map",
+        "init:js": "babel sources/js --out-file public/js/main.js --source-maps",
+        "init": "npm run init:npm && npm run init:bower && npm run init:scss && npm run init:js",
+
+        "watch:scss": "node-sass sources/scss/main.scss public/css/main.css --watch --source-map public/css/main.css.map",
+        "watch:js": "babel sources/js --watch --out-file public/js/main.js --source-maps",
+        "watch": "npm run watch:scss | npm run watch:js",
+
+        "build:scss": "node-sass --output-style=compressed sources/scss/main.scss public/css/main.min.css",
+        "build:js": "uglifyjs public/js/main.js -o public/js/main.min.js",
+        "build": "npm run build:scss | npm run build:js"
+    }
+}

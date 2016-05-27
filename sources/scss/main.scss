@@ -1,0 +1,27 @@
+// Load Bootstrap sass (v3)
+// --------------------
+@import "variables"; // NOTE put all your variables here
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+
+
+// Load project commons
+// --------------------
+@import "icons";
+@import "global";
+@import "common";
+// @import "slider"; (example)
+// …
+
+
+// Load project sections
+// NOTE create one file per section, put other things into “misc”
+// --------------------
+@import "misc";
+// @import "home"; (example)
+// …
+
+
+// Load temporary styles
+// NOTE Keep it as clean as possible (empty is best)
+// --------------------
+@import "dev";

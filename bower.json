@@ -1,0 +1,6 @@
+{
+    "name": "globalis_front_starter",
+    "dependencies": {
+        "bootstrap-sass": "3.3.6"
+    }
+}

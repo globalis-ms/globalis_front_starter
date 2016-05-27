@@ -1,0 +1,19 @@
+# SYSTEM FILES
+*.db
+.DS_Store
+._*
+*~
+.fuse*
+
+# TOOLS
+node_modules
+npm-debug.log
+bower_components
+
+# COMPILED FILES
+public/css/*.css
+public/js/*.js
+*.map
+
+# SPECIFIC TO THIS REPO ONLY
+/todo.md
