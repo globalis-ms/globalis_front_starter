@@ -55,7 +55,7 @@ However, you may need to minify your sources.
 If so, just run `npm run build` and minified sources will be available in `public/css/main.min.css` and `public/js/main.min.js`.
 
 ## Adding dependencies
-The starter loads Bootstrap v3.3.6 & jQuery v1.12.2 by default.
+The starter loads Bootstrap v3.3.6 & jQuery v2.2.4 by default.
 To add dependencies, please use [Bower](http://bower.io/) and edit `bower.json`.
 
 
