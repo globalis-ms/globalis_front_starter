@@ -25,7 +25,7 @@ npm run watch</code></pre>
 
 
     <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script>if (!window.jQuery) { document.write('<script src="bower_components/jquery/dist/jquery.min.js"><\/script>'); }</script>
     <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
     <script src="public/js/main.js"></script>

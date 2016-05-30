@@ -3,7 +3,7 @@
 [![MIT license](https://img.shields.io/badge/license-MIT-yellow.svg?style=flat-square)](LICENSE)
 
 This starter has been made for internal purposes at GLOBALIS media systems.
-*It loads Bootstrap v3.3.6 & jQuery v2.2.3 by default.*
+*It loads Bootstrap v3.3.6 & jQuery v2.2.4 by default.*
 
 Please read the following instructions before starting to code.
 These are set to help keeping the project clean and obvious to future developers.
