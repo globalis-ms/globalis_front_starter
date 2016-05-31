@@ -11,15 +11,7 @@
 
     <!-- Demo purpose only, remove this -->
     <main class="container">
-        <h1>Install GLOBALIS Front starter <i class="glyphicon glyphicon-heart"></i></h1>
-        <p>On <b>Truite</b>, execute:</p>
-        <pre><code>git clone /usr/local/apache/htdocs/nicolas/_public/front_starter your_project
-cd your_project
-rm -Rf .git
-git init
-
-npm run init
-npm run watch</code></pre>
+        <h1>GLOBALIS Front starter <i class="glyphicon glyphicon-heart"></i></h1>
         <p>Read <code>readme.md</code> to get started.</p>
     </main>
 
