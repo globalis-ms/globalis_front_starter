@@ -22,7 +22,7 @@
 
         "watch:scss": "node-sass sources/scss/main.scss public/css/main.css --watch --source-map public/css/main.css.map",
         "watch:js": "babel sources/js --watch --out-file public/js/main.js --source-maps",
-        "watch": "npm run watch:scss | npm run watch:js",
+        "watch": "npm run init:scss && npm run watch:scss | npm run watch:js",
 
         "build:scss": "node-sass --output-style=compressed sources/scss/main.scss public/css/main.min.css",
         "build:js": "uglifyjs public/js/main.js -o public/js/main.min.js",
