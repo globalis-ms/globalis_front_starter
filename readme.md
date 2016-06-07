@@ -29,14 +29,6 @@ Thanks,
 - open terminal,
 - clone this repo and `cd your_destination_folder`,
 - `rm -Rf .git` to be able to init a new git project,
-- make sure Bower, Babel CLI and Node-sass are installed:
-
-```bash
-npm install -g bower
-npm install -g babel-cli
-npm install -g node-sass
-```
-
 - run `npm run init` and wait.
 
 ## Development
