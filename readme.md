@@ -82,15 +82,11 @@ There are two folders for images:
 # Stylesheets
 
 ## File tree
-Scss files are stored into `sources/scss/` folder, following these rules:
-
-- `_common.scss` is for main header, main footer & other common elements across pages,
-- `_global.scss` if for Bootstrap overrides, default global styles (like `body`), and utility classes,
-- `_variables.scss` contains all the Bootstrap & custom variables,
-- then each component/page has its own file, except for single selectors or very small sets of items, which are put into `_misc.scss`,
-- if you don't know where to put some code, use `_dev.scss`, but try to keep it clean as much as you can (empty is best).
-
-You'll find notes in those files to help you keep your CSS clean.
+Scss files are stored into `sources/scss/` folder, following the [7-1 pattern](http://sass-guidelin.es/#architecture) from SASS guidelines.
+Some things have been added to the initial 7-1 pattern to integrate with Bootstrap and enhance the workflow:
+- `abstracts/bootstrap` to store Bootstrap variables,
+- `abstracts/dev` to buffer some features while developing,
+- `base/icons` to add iconset from Icomoon.
 
 ## Naming convention
 ```scss
