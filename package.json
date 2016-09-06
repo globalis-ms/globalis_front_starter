@@ -1,33 +1,32 @@
 {
-    "name": "globalis_front_starter",
-    "version": "0.0.1",
-    "license": "MIT",
-    "repository": {
-        "type": "git",
-        "url": "ssh://git@192.168.1.44/usr/local/apache/htdocs/git/front_starter.git"
-    },
-    "devDependencies": {
-        "babel-cli": "^6.10.1",
-        "babel-preset-es2015": "^6.9.0",
-        "bower": "^1.7.9",
-        "node-sass": "^3.8.0",
-        "uglify-js": "^2.7.0"
-    },
-    "babel": {
-        "presets": [
-            "es2015"
-        ]
-    },
-    "scripts": {
-        "init:scss": "node-sass sources/scss/main.scss -o public/css --source-map public/css",
-        "init:js": "babel sources/js --out-file public/js/main.js --source-maps",
-        "init": "npm install && bower install && npm run init:scss && npm run init:js",
-        "update": "npm run init:scss && npm run init:js",
-        "watch:scss": "npm run init:scss && node-sass sources/scss/main.scss -wo public/css --source-map public/css",
-        "watch:js": "babel sources/js --watch --out-file public/js/main.js --source-maps",
-        "watch": "npm run init:scss && npm run watch:scss | npm run watch:js",
-        "build:scss": "node-sass --output-style=compressed sources/scss/main.scss public/css/main.min.css",
-        "build:js": "uglifyjs public/js/main.js -o public/js/main.min.js",
-        "build": "npm run build:scss | npm run build:js"
-    }
+  "name": "globalis_front_starter",
+  "version": "0.0.1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@192.168.1.44/usr/local/apache/htdocs/git/front_starter.git"
+  },
+  "devDependencies": {
+    "bower": "^1.7.9",
+    "jshint": "^2.9.3",
+    "node-sass": "^3.8.0",
+    "uglify-js": "^2.7.0",
+    "watch": "^0.19.2"
+  },
+  "scripts": {
+    "init:css": "node-sass sources/scss/main.scss -o public/css --source-map public/css/main.css.map",
+    "init:js": "uglifyjs sources/js/**.js -o public/js/main.js --source-map public/js/main.js.map -p relative",
+    "init": "npm install && bower install && npm run init:css && npm run init:js",
+    "update": "npm run init:css && npm run init:js",
+    "lint": "jshint sources/js || true",
+    "watch:css": "watch 'npm run init:css' sources/scss",
+    "watch:js": "watch 'npm run init:js' sources/js",
+    "watch": "npm run watch:css | npm run watch:js",
+    "build:css": "node-sass --output-style=compressed sources/scss/main.scss public/css/main.min.css",
+    "build:js": "uglifyjs public/js/**/*.js -o public/js/main.min.js",
+    "build": "npm run build:css && npm run build:js"
+  },
+  "jshintConfig": {
+    "asi": true
+  }
 }

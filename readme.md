@@ -190,8 +190,6 @@ Try to keep the classes in that order: **component, modifiers, Bootstrap, utilit
 
 ---
 # JavaScript
-Thanks to [Babel](https://babeljs.io/), ES2015 (or ES6) is enabled.
-[Learn ES2015](https://babeljs.io/docs/learn-es2015/)
 
 ## Keeping it clean
 You only need to work on `sources/js/`.
