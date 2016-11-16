@@ -1,8 +1,8 @@
 <IfModule mod_rewrite.c>
-    RewriteEngine On
+	RewriteEngine On
 
-    # Versioning helper
-    # NOTE redirect file-vX.X.X.min.js/css to file.min.js/css
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^(.+)-v([\d\.]+)\.((min\.)?css|js)$ $1.$3 [L]
+	# Versioning helper
+	# NOTE redirect file-vX.X.X.min.js/css to file.min.js/css
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteRule ^(.+)-v([\d\.]+)\.((min\.)?css|js)$ $1.$3 [L]
 </IfModule>

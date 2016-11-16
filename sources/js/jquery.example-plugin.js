@@ -1,25 +1,25 @@
 /*
 (function($) {
 
-    // component
-    $.fn.Plugin = function(options) {
+	// component
+	$.fn.Plugin = function(options) {
 
-        // settings
-        var settings = jQuery.extend({
-            // key: default value,
-            // …
-        }, options);
+		// settings
+		var settings = jQuery.extend({
+			// key: default value,
+			// …
+		}, options);
 
-        // methods & properties definitions
-        // …
+		// methods & properties definitions
+		// …
 
-        // initialization
-        // …
+		// initialization
+		// …
 
-        // internal interactions
-        // …
+		// internal interactions
+		// …
 
-    };
+	};
 
 })(jQuery);
 */

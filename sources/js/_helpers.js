@@ -6,7 +6,7 @@ window.requestAnimFrame=function(){return window.requestAnimationFrame||window.w
 /*
 // NOTE declare global helpers like this to make them available everywhere
 function globalHelper() {
-    // instructions
-    // …
+	// instructions
+	// …
 }
 */

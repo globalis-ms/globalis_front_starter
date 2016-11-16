@@ -1,0 +1,47 @@
+// General
+// NOTE styles on tag selectors
+// ---------------------
+body {
+	padding-top: $grid-gutter-width;
+	padding-bottom: $grid-gutter-width;
+}
+
+
+
+// Bootstrap overrides
+// NOTE supercharge bootstrap elements globally
+// ---------------------
+.btn.btn-text {
+	cursor: auto;
+
+	&:active {
+		-webkit-box-shadow: none;
+		box-shadow: none;
+	}
+}
+
+.tooltip-inner {
+	white-space: pre-wrap;
+}
+
+input:invalid, textarea:invalid {
+	border-color: $brand-danger !important;
+	color: $brand-danger !important;
+}
+
+
+
+// Helpers
+// NOTE name them `%selector` so they won't be public classes
+// NOTE then use `@extend %selector;` to apply styles
+// ---------------------
+%antialiased { -webkit-font-smoothing: antialiased; }
+%unselectable { -moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; }
+%clearfix:after { content: ''; display: table; clear: both; }
+%ellipsis { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+
+
+
+// Utilities
+// NOTE use `u-` prefix for public classes
+// ---------------------

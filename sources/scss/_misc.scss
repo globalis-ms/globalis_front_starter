@@ -1,0 +1,64 @@
+// Misc styles
+// NOTE single-selector sections/partials go here
+// --------------------
+.Loader {
+  display: none;
+  position: fixed; z-index: 1000;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  margin: 0!important;
+  border-radius: 0 !important;
+}
+
+
+.Lightbox {
+  position: fixed; z-index: 9000;
+  top: 0; bottom: 0; left: 0; right: 0;
+
+  &-overlay {
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    background: rgba(#fff, .8);
+    cursor: pointer;
+  }
+
+  &-close {
+    position: absolute;
+    top: 0; right: 0;
+    width: 2rem; height: 2rem;
+    border: none;
+    background: transparent;
+    text-align: center;
+    line-height: 2rem;
+  }
+
+  &-wrap {
+    position: absolute;
+    top: 50%; left: 50%;
+    cursor: auto;
+
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    img {
+      max-width: 100%;
+      width: auto; height: auto;
+    }
+  }
+}
+
+
+.u-format {
+  @extend %clearfix;
+
+  .alignleft {
+    float: left;
+    margin-bottom: $spacer-y;
+    margin-right: $spacer-x;
+  }
+  .alignright {
+    float: right;
+    margin-bottom: $spacer-y;
+    margin-left: $spacer-x;
+  }
+}

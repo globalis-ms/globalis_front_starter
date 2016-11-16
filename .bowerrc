@@ -1,0 +1,6 @@
+{
+	"directory": "sources/bower_components",
+	"scripts": {
+		"postinstall": "make vendor"
+	}
+}
