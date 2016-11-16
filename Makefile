@@ -14,9 +14,10 @@ port=3000
 sync=true
 watch:
 ifeq ($(sync), true)
-	@ browser-sync start -p $(url) --port $(port) --files "index.html" "public" --no-open &> /dev/null | watch -n 1 make all
+	@ browser-sync start -p $(url) --port $(port) --files "index.html" "public" --no-open &> /dev/null | \
+		watch -t -n 1 "make all && echo '-- Browser-sync listening on $(url):$(port)'"
 else
-	@ watch -n 1 make all
+	@ watch -t -n 1 make all
 endif
 
 
